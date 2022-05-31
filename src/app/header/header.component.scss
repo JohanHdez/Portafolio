@@ -1,0 +1,36 @@
+@import './src/app/shared/variables';
+
+.wrapper {
+  display:flex;
+  justify-content: center;
+  padding: 0 1rem;
+  align-items: center;
+  align-content: center;
+  height: 3.5rem;
+  box-shadow: 0 0 29px $text-color;
+  background-color: #5169d9;
+  color: $color-white;
+}
+
+.section-2 {
+  .list-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    .item-menu {
+      padding: 0 1rem;
+      cursor: pointer;
+      transition: all ease 200ms;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .item-number {
+      color: $second-color;
+    }
+  }
+}

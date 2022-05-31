@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="pre-title animate__animated animate__fadeInUp animation-1">Hola mi nombre es</div>
+  <h1 #asTitle class="title animate__animated animate__fadeInUp animation-2"></h1>
+  <h2 class="sub-title animate__animated animate__fadeInUp animation-3">Soy desarrollador Web</h2>
+  <p class="description animate__animated animate__fadeInUp animation-4">Me apasionan las tecnologías web, me encantan los proyectos retadores y el trabajo en equipo, tengo conocimiento en: Angular, JS, HTML5, CSS3, SCSS, NGRX</p>
+
+  <div class="link-wrapper">
+    <hr>
+    <div class="links d-flex flex-wrap">
+      <div class="block col-12 col-sm-4 col-md-4 col-lg-4 animate__animated animate__fadeInUp animation-5" *ngFor="let linkObj of links">
+        <a [href]="linkObj.link" target="_blank">
+          <div class="block-in">
+            <span [innerHTML]="linkObj.icon"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="img-wrapper animate__animated animate__fadeInUp animation-6 d-none d-md-block d-lg-block">
+      <img class="" src="assets/img/ilustration-3d.png" alt="johan hernandez 3d" class="img-sidebar">
+  </div>
+</div>

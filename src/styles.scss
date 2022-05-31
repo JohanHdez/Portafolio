@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+@import './src/app/shared/variables';
+
+:root {
+  --color-1: #14213d;
+  --color-2: #fca311;
+}
+htm, body {
+  margin:0;
+  padding: 0;
+  color: $text-color;
+  font-family: $font-family-Cabin;
+  background-color: $background-color;
+
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+a, a:visited, a:hover, a:link {
+  color: $text-color;
+}
+
+
+@for $i from 1 through 100 {
+  .animation-#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}

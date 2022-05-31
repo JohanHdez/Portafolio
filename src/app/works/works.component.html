@@ -1,0 +1,17 @@
+<div class="wrapper" [perfectScrollbar]="config">
+  <app-header></app-header>
+  <div class="d-flex flex-wrap p-2">
+    <div class="container-repo col-sm-12 col-md-12 col-lg-6 animate__animated animate__fadeInUp animation-{{i*2}}" *ngFor="let item of repo; let i = index">
+      <div class="p-2">
+        <img class="container-repo-img" src="https://digital55.com/wp-content/uploads/2022/01/estructura_store_ngrx_.png" alt="">
+        <div class="container-repo-in p-4">
+          <h2 class="title">{{ item.name  }}</h2>
+          <p class="description">Fecha de publicación: {{ item.created_at | date }}</p>
+          <p class="description">Descripción: {{ item.description  }}</p>
+          <div class="d-flex flex-nowrap justify-content-between">
+            <p><a href="{{ item.html_url }}" target="_blank" class="description"><i class="uil uil-external-link-alt"></i> Vér repositorio </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
