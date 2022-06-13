@@ -1,0 +1,17 @@
+{
+    "header": {
+        "title": "Repositories",
+        "selectLang": "Select lang"
+    },
+    "sidebar": {
+        "preTitle": "Hi my name is",
+        "title": "Johan Hernández",
+        "rol": "Ing Frontend Developer",
+        "description": "I am passionate about web technologies, I love challenging projects and teamwork, I have knowledge in: Angular, JS, HTML5, CSS3, SCSS, NGRX"
+    },
+    "works": {
+        "date": "Publication date",
+        "description": "Description",
+        "repository": "View repository"
+    }
+}

@@ -8,7 +8,20 @@
     <ul class="list-menu">
       <li class="item-menu">
         <span class="item-number"></span>
-        <span class="link"> Repositorios </span>
+        <span class="link"> {{ 'header.title' | translate }} </span>
+      </li>
+      <li class="item-menu">
+        <span class="form-inline">
+          <select 
+              #selectedLang 
+              (change)="switchLang(selectedLang.value)">
+            <option *ngFor="let language of translate.getLangs()" 
+              [value]="language"
+              [selected]="language === translate.currentLang">
+              {{ language }}
+            </option>
+          </select>
+        </span>
       </li>
     </ul>
   </div>

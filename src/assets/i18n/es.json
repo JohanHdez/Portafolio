@@ -1,0 +1,17 @@
+{
+    "header": {
+        "title": "Repositorios",
+        "selectLang": "Seleccióne idioma"
+    },
+    "sidebar": {
+        "preTitle": "Hola mi nombre es",
+        "title": "Johan Hernández",
+        "rol": "Ing Desarrollador de Interfaz",
+        "description": "Me apasionan las tecnologías web, me encantan los proyectos retadores y el trabajo en equipo, tengo conocimiento en: Angular, JS, HTML5, CSS3, SCSS, NGRX"
+    },
+    "works": {
+        "date": "Fecha de publicación",
+        "description": "Descripción",
+        "repository": "Vér repositorio"
+    }
+}
